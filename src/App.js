@@ -8,8 +8,8 @@ function App() {
 
   useEffect(()=>{
     const queryNhost = async () => {
-      const res = await fetch('https://seuwsudjlbtrxykhswfg.nhost.run/v1/functions/hello')
-      console.log(res.json())
+      const res = await fetch('https://seuwsudjlbtrxykhswfg.nhost.run/v1/functions/setheader')
+      console.log(res)
       const xyz = await nhost.graphql.request(`{
         users {
           id
